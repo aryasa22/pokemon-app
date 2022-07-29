@@ -32,12 +32,12 @@ export default function Ability() {
           <h3>{params.name.replace("-", " ")}</h3>
         </div>
 
-        <h4>Ability</h4>
+        <h4>Effect</h4>
         {ability.map((item) => {
           return <p>{item.language.name === "en" ? item.effect : ""}</p>;
         })}
 
-        <h4>Pokemons:</h4>
+        <h4>Users:</h4>
         <div className="pokemons-ability">
           {abilityPokemons.map((pokemon) => {
             return (

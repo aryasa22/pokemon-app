@@ -8,7 +8,7 @@ export default function Nav() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    navigate("/searched/" + search);
+    navigate("/pokemon-app/searched/" + search);
     setSearch("");
   };
 
@@ -19,7 +19,7 @@ export default function Nav() {
       transition={{ type: "spring", stiffness: 120 }}
     >
       <nav className="navbar container">
-        <Link className="link" to="/">
+        <Link className="link" to="/pokemon-app/">
           <h1 className="navbar-brand">Pokemons Club</h1>
         </Link>
 

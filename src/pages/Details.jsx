@@ -71,7 +71,7 @@ export default function Details() {
                   return (
                     <Link
                       className="link details-ability-link"
-                      to={`/ability/${ability.ability.name}`}
+                      to={`/pokemon-app/ability/${ability.ability.name}`}
                       key={ability.ability.name}
                     >
                       <motion.p

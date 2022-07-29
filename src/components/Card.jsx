@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Card({ pokemon }) {
   return (
-    <Link className="link" to={`details/${pokemon.url.slice(34, -1)}`}>
+    <Link
+      className="link"
+      to={`/pokemon-app/details/${pokemon.url.slice(34, -1)}`}
+    >
       <div className="pokemon-card">
         <div className="pokemon-card-image">
           <img

@@ -36,7 +36,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           <Route
-            path="/"
+            path="/pokemon-app/"
             element={
               <Home
                 pokemons={pokemons}
@@ -47,9 +47,9 @@ function App() {
             }
           />
 
-          <Route path="/details/:id" element={<Details />} />
-          <Route path="/ability/:name" element={<Ability />} />
-          <Route path="/searched/:search" element={<Searched />} />
+          <Route path="/pokemon-app/details/:id" element={<Details />} />
+          <Route path="/pokemon-app/ability/:name" element={<Ability />} />
+          <Route path="/pokemon-app/searched/:search" element={<Searched />} />
         </Routes>
       </AnimatePresence>
     </div>
